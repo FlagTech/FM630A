@@ -1,0 +1,5 @@
+CircuitPython:
+adafruit-circuitpython-raspberry_pi_pico-en_US-6.2.0
+
+MicroPython:
+rp2-pico-20210205-unstable-v1.14-8-g1f800cac3
