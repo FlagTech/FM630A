@@ -11,11 +11,11 @@ pot = analogio.AnalogIn(board.A2)
 
 while True:
     # 將可變電阻的 ADC 值轉換成 BPM
-    beat = int(pot.value*210/65460) + 40
+    bpm = int(pot.value*210/65460) + 40
     
     # 開啟聲音
     buzzer.duty_cycle = 2**15
     time.sleep(0.1)
     # 關閉聲音
     buzzer.duty_cycle = 0
-    time.sleep(60/beat)
+    time.sleep(60/bpm)
