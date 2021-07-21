@@ -13,22 +13,22 @@ from adafruit_hid.keycode import Keycode
 keyboard = Keyboard(usb_hid.devices)
 keyboard_layout = KeyboardLayoutUS(keyboard)
 
-btn_copy = digitalio.DigitalInOut(board.GP18)
-btn_copy.direction = digitalio.Direction.INPUT
-btn_copy.pull = digitalio.Pull.UP
+btn_plus = digitalio.DigitalInOut(board.GP18)
+btn_plus.direction = digitalio.Direction.INPUT
+btn_plus.pull = digitalio.Pull.UP
 
-btn_paste = digitalio.DigitalInOut(board.GP19)
-btn_paste.direction = digitalio.Direction.INPUT
-btn_paste.pull = digitalio.Pull.UP
+btn_minus = digitalio.DigitalInOut(board.GP19)
+btn_minus.direction = digitalio.Direction.INPUT
+btn_minus.pull = digitalio.Pull.UP
 
 while True:
-    if btn_copy.value == False:
+    if btn_plus.value == False:
         keyboard.press(Keycode.WINDOWS)
         keyboard.press(Keycode.KEYPAD_PLUS)
         keyboard.release(Keycode.WINDOWS)
         keyboard.release(Keycode.KEYPAD_PLUS)
         time.sleep(0.1)
-    if btn_paste.value == False:
+    if btn_minus.value == False:
         keyboard.press(Keycode.WINDOWS)
         keyboard.press(Keycode.KEYPAD_MINUS)
         keyboard.release(Keycode.WINDOWS)

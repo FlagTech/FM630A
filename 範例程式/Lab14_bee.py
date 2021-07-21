@@ -30,4 +30,4 @@ while True:
                 buzzer.duty_cycle = 2 ** 15   # 設定音量為 2**15               
             time.sleep(0.2)                   # 聲音持續 0.2 秒
             buzzer.duty_cycle = 0             # 停止發聲
-            time.sleep(0.1)                   # 持續停止發聲 0.1 秒
+            time.sleep(0.1)                   # 持續靜音 0.1 秒

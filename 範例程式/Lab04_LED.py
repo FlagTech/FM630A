@@ -5,7 +5,7 @@ import time
 # 匯入數位輸出入的 DigitalInOut、Direction 模組
 from digitalio import DigitalInOut, Direction
 
-# 建立 GPIO15 腳位的 DigitalInOut 物件, 並命名為 led
+# 建立 GP15 腳位的 DigitalInOut 物件, 並命名為 led
 led = DigitalInOut(board.GP15)
 # 設定 led 為輸出腳位
 led.direction = Direction.OUTPUT
