@@ -28,7 +28,7 @@ game_start = time.time()
 
 # 遊戲時間限制 10 秒
 while(time.time() - game_start < 10):
-    # 沒新指令 且 雙軸至中才會更換
+    # 沒新指令 且 雙軸置中才會更換
     if(newIndicator == False and
        x_axis.value > 10000 and
        x_axis.value < 60000 and
