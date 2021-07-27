@@ -1,6 +1,6 @@
 import board
 import time
-# 增加數位輸出入的 Pull 模組
+# 增加數位輸出入的 Pull 類別
 from digitalio import DigitalInOut, Direction, Pull
 
 # 建立 GP14 腳位的 DigitalInOut 物件, 並命名為 button
